@@ -8,4 +8,6 @@ conn, addr = sock.accept()
 
 while True:
     data = conn.recv(1024)
+    if not data:
+        break
     conn.send(data.upper())
