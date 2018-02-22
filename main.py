@@ -11,3 +11,5 @@ while True:
     if not data:
         break
     conn.send(data.upper())
+
+conn.close()
